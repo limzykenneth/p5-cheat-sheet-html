@@ -1,3 +1,29 @@
+@font-face{
+	font-family: "Fira Code";
+	font-weight: normal;
+	src: url("/fonts/FiraCode-Regular.otf") format("truetype");
+}
+
+@font-face{
+	font-family: "Fira Code";
+	font-weight: light;
+	src: url("/fonts/FiraCode-Light.otf") format("truetype");
+}
+
+@font-face{
+	font-family: "Fira Code";
+	font-weight: medium;
+	src: url("/fonts/FiraCode-Medium.otf") format("truetype");
+}
+
+@font-face{
+	font-family: "Fira Code";
+	font-weight: bold;
+	src: url("/fonts/FiraCode-Bold.otf") format("truetype");
+}
+
+
+
 body{
 	padding: 35px;
 	font-family: "Fira Code", monospace;
