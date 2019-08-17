@@ -278,11 +278,12 @@ var ifelseSketch = function(p){
 	var canvas;
 
 	p.setup = function(){
-		canvas = p.createCanvas(205, 235);
+		canvas = p.createCanvas(215, 245);
 		canvas.parent("ifelse-canvas");
 		p.translate(5, 5);
 
 		p.noFill();
+		// test
 		p.beginShape();
 			p.vertex(90, 0);
 			p.vertex(170, 20);
@@ -290,9 +291,37 @@ var ifelseSketch = function(p){
 			p.vertex(10, 20)
 		p.endShape(p.CLOSE);
 
-		p.line(90, 40, 90, 100);
+		// statements
+		p.rect(10, 90, 160, 50);
+
+		// true
+		p.line(90, 40, 90, 90);
+
+		// continue program
+		p.line(90, 140, 90, 190);
+
+		// false
+		p.line(90, 160, 190, 160);
+		p.line(190, 160, 190, 20);
+		p.line(190, 20, 170, 20);
+
+		// arrows
 		p.fill("#000000");
-		// p.triangle(45, 50, 35, 40, 55, 40);
+		p.triangle(90, 90, 80, 80, 100, 80);
+		p.triangle(90, 190, 80, 180, 100, 180);
+
+		// text
+		p.textFont("Fira Code");
+		p.text("true", 100, 65);
+		p.textAlign(p.CENTER, p.BOTTOM);
+		p.text("false", 190, 20);
+		p.textAlign(p.CENTER, p.TOP);
+		p.text("continue program", 90, 200);
+
+		p.textStyle(p.BOLD);
+		p.textAlign(p.CENTER, p.CENTER);
+		p.text("test", 90, 20);
+		p.text("statements", 90, 115);
 	};
 };
 
