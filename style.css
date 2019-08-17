@@ -1,0 +1,33 @@
+body{
+	padding: 35px;
+	font-family: "Fira Code", monospace;
+	font-size: 10pt;
+}
+
+h1, h2{
+	color: #ed225d;
+}
+
+#cheat-sheet{
+
+}
+
+#cheat-sheet pre{
+	padding: 4.5px;
+	background: #fafafa;
+}
+
+#cheat-sheet #title{
+	font-size: 32pt;
+}
+
+#cheat-sheet #subtitle{
+	padding: 4.5px;
+	color: white;
+	background: #ed225d;
+}
+
+#cheat-sheet ul{
+	padding: 0;
+	list-style: none;
+}
