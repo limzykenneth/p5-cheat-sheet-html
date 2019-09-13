@@ -22,16 +22,21 @@
 	src: url("/fonts/FiraCode-Bold.otf") format("truetype");
 }
 
-
+*{
+	color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+}
 
 body{
 	padding: 35px;
+	margin: 0;
 	font-family: "Fira Code", monospace;
-	font-size: 10pt;
+	font-size: 12pt;
 }
 
 h1, h2{
 	color: #ed225d;
+	font-size: 14pt;
 }
 
 #cheat-sheet{
@@ -41,14 +46,24 @@ h1, h2{
 #cheat-sheet pre{
 	padding: 4.5px;
 	background: #fafafa;
+	white-space: pre-wrap;
+}
+
+#cheat-sheet pre .code-comments{
+	color: #a4a4a4;
+}
+
+#cheat-sheet pre .descriptors{
+	color: #545454;
 }
 
 #cheat-sheet #title{
+	margin-top: 20px;
 	font-size: 32pt;
 }
 
 #cheat-sheet #subtitle{
-	padding: 4.5px;
+	padding: 10px;
 	color: white;
 	background: #ed225d;
 }
@@ -56,4 +71,87 @@ h1, h2{
 #cheat-sheet ul{
 	padding: 0;
 	list-style: none;
+}
+
+#cheat-sheet .canvas-container{
+	display: inline-block;
+}
+
+@media screen and (max-width: 375px){
+	body{
+		padding: 20px;
+		font-size: 11pt;
+	}
+
+	h1, h2{
+		font-size: 10pt;
+	}
+}
+
+@media print{
+	@page{
+		size: landscape;
+		margin: 0;
+	}
+
+	body{
+		font-size: 9.5pt;
+		padding-top: 25px;
+		padding-bottom: 0;
+	}
+
+	h1, h2{
+		margin: 0px;
+	}
+
+	h2{
+		font-size: 9.5pt;
+	}
+
+	#cheat-sheet{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#cheat-sheet .column{
+		width: 31%;
+		/*display: inline-block;*/
+	}
+
+	#cheat-sheet .canvas-container{
+		width: 31%;
+	}
+
+	#cheat-sheet .canvas-container .p5Canvas{
+		width: 10vw !important;
+		height: 10vw !important;
+	}
+
+	#cheat-sheet pre{
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	#cheat-sheet #title{
+		display: inline-block;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#cheat-sheet #subtitle{
+		display: inline-block;
+		margin-left: 10px;
+		width: 120px;
+	}
+
+	#cheat-sheet #ifelse-canvas{
+		position: absolute;
+		bottom: 150px;
+		right: 35px;
+	}
+
+	#cheat-sheet #ifelse-canvas canvas{
+		width: 170px !important;
+		height: 194px !important;
+	}
 }

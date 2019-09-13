@@ -8,9 +8,9 @@ var gridSketch = function(p){
 		canvas = p.createCanvas(canvasSize, canvasSize);
 		canvas.parent("grid-canvas");
 		p.strokeWeight(0.25);
-		p.translate(canvasSize/10, canvasSize/10);
+		p.translate(canvasSize/15, canvasSize/15);
 
-		var gridSize = canvasSize - 2 * canvasSize / 10;
+		var gridSize = canvasSize - 2 * canvasSize / 15;
 		for(var x=0; x<=10; x++){
 			p.line(gridSize / 10 * x, 0, gridSize / 10 * x, gridSize);
 		}
@@ -35,9 +35,9 @@ var lineSketch = function(p){
 		canvas = p.createCanvas(canvasSize, canvasSize);
 		canvas.parent("line-canvas");
 		p.strokeWeight(0.25);
-		p.translate(canvasSize/10, canvasSize/10);
+		p.translate(canvasSize/15, canvasSize/15);
 
-		var gridSize = canvasSize - 2 * canvasSize / 10;
+		var gridSize = canvasSize - 2 * canvasSize / 15;
 		for(var x=0; x<=10; x++){
 			p.line(gridSize / 10 * x, 0, gridSize / 10 * x, gridSize);
 		}
@@ -75,9 +75,9 @@ var ellipseSketch = function(p){
 		canvas.parent("ellipse-canvas");
 		p.strokeWeight(0.25);
 		p.push();
-		p.translate(canvasSize/10, canvasSize/10);
+		p.translate(canvasSize/15, canvasSize/15);
 
-		var gridSize = canvasSize - 2 * canvasSize / 10;
+		var gridSize = canvasSize - 2 * canvasSize / 15;
 		for(var x=0; x<=10; x++){
 			p.line(gridSize / 10 * x, 0, gridSize / 10 * x, gridSize);
 		}
@@ -126,9 +126,9 @@ var rectSketch = function(p){
 		p.strokeWeight(0.25);
 		p.textFont("Fira Code");
 		p.push();
-		p.translate(canvasSize/10, canvasSize/10);
+		p.translate(canvasSize/20, canvasSize/15);
 
-		var gridSize = canvasSize - 2 * canvasSize / 10;
+		var gridSize = canvasSize - 2 * canvasSize / 15;
 		for(var x=0; x<=10; x++){
 			p.line(gridSize / 10 * x, 0, gridSize / 10 * x, gridSize);
 		}
@@ -175,9 +175,9 @@ var arcSketch = function(p){
 		p.strokeWeight(0.25);
 		p.textFont("Fira Code");
 		p.push();
-		p.translate(canvasSize/10, canvasSize/10);
+		p.translate(canvasSize/15, canvasSize/15);
 
-		var gridSize = canvasSize - 2 * canvasSize / 10;
+		var gridSize = canvasSize - 2 * canvasSize / 15;
 		for(var x=0; x<=10; x++){
 			p.line(gridSize / 10 * x, 0, gridSize / 10 * x, gridSize);
 		}
@@ -232,9 +232,9 @@ var vertexSketch = function(p){
 		canvas = p.createCanvas(canvasSize, canvasSize);
 		canvas.parent("vertex-canvas");
 		p.strokeWeight(0.25);
-		p.translate(canvasSize/10, canvasSize/10);
+		p.translate(canvasSize/15, canvasSize/15);
 
-		var gridSize = canvasSize - 2 * canvasSize / 10;
+		var gridSize = canvasSize - 2 * canvasSize / 15;
 		for(var x=0; x<=10; x++){
 			p.line(gridSize / 10 * x, 0, gridSize / 10 * x, gridSize);
 		}
@@ -288,7 +288,7 @@ var ifelseSketch = function(p){
 			p.vertex(90, 0);
 			p.vertex(170, 20);
 			p.vertex(90, 40);
-			p.vertex(10, 20)
+			p.vertex(10, 20);
 		p.endShape(p.CLOSE);
 
 		// statements
