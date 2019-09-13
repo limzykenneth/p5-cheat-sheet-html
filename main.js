@@ -1,3 +1,17 @@
+// Terms to translate
+var terms = {
+	"width": "width",
+	"height": "height",
+	"stop": "stop",
+	"start": "start",
+	"true": "true",
+	"false": "false",
+	"continue_program": "continue program",
+	"test": "test",
+	"statements": "statements"
+};
+
+// Actual sketch codes
 var canvasSize = 220;
 var p5Pink = "#ed225d";
 
@@ -105,14 +119,14 @@ var ellipseSketch = function(p){
 		p.push();
 		p.translate(p.width/2, p.height/2 + (gridSize / 10 * 6.5)/2 + 7);
 		p.textAlign(p.CENTER, p.TOP);
-		p.text("width", 0, 0);
+		p.text(terms.width, 0, 0);
 		p.pop();
 
 		p.push();
 		p.translate(p.width/2, p.height/2);
 		p.rotate(-p.PI/2);
 		p.textAlign(p.CENTER, p.TOP);
-		p.text("height", 0, (gridSize / 10 * 6.5)/2 + 7);
+		p.text(terms.height, 0, (gridSize / 10 * 6.5)/2 + 7);
 		p.pop();
 	};
 };
@@ -155,13 +169,13 @@ var rectSketch = function(p){
 		p.push();
 		p.translate(p.width/2, p.height/2);
 		p.textAlign(p.CENTER, p.TOP);
-		p.text("width", -10, (gridSize/10*5) / 2);
+		p.text(terms.width, -10, (gridSize/10*5) / 2);
 		p.pop();
 
 		p.push();
 		p.translate(p.width/2, p.height/2);
 		p.rotate(-p.PI/2);
-		p.text("height", -10, (gridSize/10*5) / 2 + 7);
+		p.text(terms.height, -10, (gridSize/10*5) / 2 + 7);
 		p.pop();
 	};
 };
@@ -207,19 +221,19 @@ var arcSketch = function(p){
 			p.text("(x1,y1)", 0, -10);
 
 			p.textAlign(p.CENTER, p.TOP);
-			p.text("width", 0, gridSize / 10 * 7.5 / 2 + 5);
+			p.text(terms.width, 0, gridSize / 10 * 7.5 / 2 + 5);
 
-			p.text("stop", gridSize / 10 * 6.5 / 4, 3)
+			p.text(terms.stop, gridSize / 10 * 6.5 / 4, 3)
 
 			p.push();
 				p.rotate(p.PI/2);
-				p.text("start", gridSize / 10 * 7.5 / 4, 3);
+				p.text(terms.start, gridSize / 10 * 7.5 / 4, 3);
 			p.pop();
 
 			p.push();
 				p.rotate(-p.PI/2);
 				p.textAlign(p.CENTER, p.BOTTOM);
-				p.text("height", 0, -gridSize / 10 * 7.5 / 2 - 5);
+				p.text(terms.height, 0, -gridSize / 10 * 7.5 / 2 - 5);
 			p.pop();
 		p.pop();
 	};
@@ -312,16 +326,16 @@ var ifelseSketch = function(p){
 
 		// text
 		p.textFont("Fira Code");
-		p.text("true", 100, 65);
+		p.text(terms.true, 100, 65);
 		p.textAlign(p.CENTER, p.BOTTOM);
-		p.text("false", 190, 20);
+		p.text(terms.false, 190, 20);
 		p.textAlign(p.CENTER, p.TOP);
-		p.text("continue program", 90, 200);
+		p.text(terms.continue_program, 90, 200);
 
 		p.textStyle(p.BOLD);
 		p.textAlign(p.CENTER, p.CENTER);
-		p.text("test", 90, 20);
-		p.text("statements", 90, 115);
+		p.text(terms.test, 90, 20);
+		p.text(terms.statements, 90, 115);
 	};
 };
 
