@@ -115,7 +115,7 @@ h1, h2{
 
 	#cheat-sheet .column{
 		width: 31%;
-		/*display: inline-block;*/
+		max-height: 90vh;
 	}
 
 	#cheat-sheet .canvas-container{
@@ -147,11 +147,20 @@ h1, h2{
 	#cheat-sheet #ifelse-canvas{
 		position: absolute;
 		bottom: 150px;
-		right: 35px;
+		right: 40px;
 	}
 
 	#cheat-sheet #ifelse-canvas canvas{
 		width: 170px !important;
 		height: 194px !important;
+	}
+}
+
+@media print and (orientation: portrait){
+	#cheat-sheet #ifelse-canvas{
+		position: relative;
+		float: left;
+		right: 0;
+		bottom: 0;
 	}
 }
