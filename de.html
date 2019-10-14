@@ -42,7 +42,7 @@ function <strong>draw()</strong>{
 			</section>
 
 			<section>
-				<h1>system variables</h1>
+				<h1>systemvariablen</h1>
 				<pre>
 <strong>windowWidth / windowHeight</strong>
 <span class="descriptors">breite / höhe des fensters</span>
@@ -79,7 +79,7 @@ function <strong>draw()</strong>{
 
 		<div class="column">
 			<section>
-				<h1>2d primitives</h1>
+				<h1>2D-formen</h1>
 				<pre>
 <strong>line(</strong>x1, y1, x2, y2<strong>)</strong>
 
@@ -101,7 +101,7 @@ function <strong>draw()</strong>{
 
 				<ul>
 					<li class="canvas-container">
-						<h2>grid system</h2>
+						<h2>rastersystem</h2>
 						<div id="grid-canvas"></div>
 					</li>
 					<li class="canvas-container">
@@ -132,10 +132,10 @@ function <strong>draw()</strong>{
 				<pre>
 <strong>+ - / *</strong>
 
-<strong>random(</strong>low,high<strong>)</strong>
+<strong>random(</strong>minimum,maximum<strong>)</strong>
 
-<strong>map(</strong>value, in1, in2, out1, out2<strong>)</strong>
-<span class="descriptors">map a value from input to output range</span>
+<strong>map(</strong>wert, in1, in2, out1, out2<strong>)</strong>
+<span class="descriptors">transformiert einen wert von der eingabeskala in die ausgabeskala</span>
 				</pre>
 			</section>
 		</div>
@@ -144,46 +144,48 @@ function <strong>draw()</strong>{
 			<section>
 				<h1>attributes</h1>
 				<pre>
-<strong>background(</strong>color<strong>)</strong>
-<span class="descriptors">set the background color</span>
+<strong>background(</strong>farbe<strong>)</strong>
+<span class="descriptors">hintergrundfarbe setzen</span>
 
-<strong>fill(</strong>color<strong>)</strong>
-<span class="descriptors">set the fill color</span>
+<strong>fill(</strong>farbe<strong>)</strong>
+<span class="descriptors">füllfarbe setzen</span>
 
 <strong>noFill()</strong>
-<span class="descriptors">disables fill</span>
+<span class="descriptors">keine füllfarbe</span>
 
-<strong>stroke(</strong>color<strong>)</strong>
-<span class="descriptors">set the stroke color</span>
+<strong>stroke(</strong>farbe<strong>)</strong>
+<span class="descriptors">strichfarbe setzen</span>
 
-<strong>strokeWeight(</strong>weight<strong>)</strong>
-<span class="descriptors">set the stroke’s width</span>
+<strong>strokeWeight(</strong>stärke<strong>)</strong>
+<span class="descriptors">strichstärke einstellen</span>
 
 <strong>noStroke()</strong>
-<span class="descriptors">disables stroke</span>
+<span class="descriptors">kein strich zeichnen</span>
 
-<strong>ellipseMode(</strong>MODE<strong>)</strong>
-<strong>rectMode(</strong>MODE<strong>)</strong>
-<span class="descriptors">CENTER,CORNER</span>
+<strong>ellipseMode(</strong>modus<strong>)</strong>
+<strong>rectMode(</strong>modus<strong>)</strong>
+<span class="descriptors">CENTER oder CORNER</span>
 
 <strong>textSize(</strong>pixels<strong>)</strong>
 				</pre>
 			</section>
 
 			<section>
-				<h1>if/then logic</h1>
+				<h1>if/then Logik</h1>
 				<pre>
 
-<strong>if(</strong>test<strong>){</strong>
-  statements
+<strong>if(</strong>bedingung<strong>){</strong>
+  programmcode
 <strong>}</strong>
 
-== equal to
-!= not equal
->  greater than
-<  less than
->= greater than or equal
-<= less than or equal
+== gleich wie
+!= ungleich
+>  grösser als
+<  kleiner als
+>= grösser oder
+   gleich wie
+<= kleiner oder
+   gleich wie
 
 				</pre>
 				<div id="ifelse-canvas"></div>
@@ -191,7 +193,10 @@ function <strong>draw()</strong>{
 		</div>
 	</article>
 
-	<footer>Compiled by Ben Moren http://benmoren.com CC BY SA NC 4.0</footer>
-	<script src="./main.js"></script>
+	<footer>
+		Compiled by Ben Moren http://benmoren.com CC BY SA NC 4.0<br/>
+		Translation by Philipp Lehmann
+	</footer>
+	<script src="./de-main.js"></script>
 </body>
 </html>
