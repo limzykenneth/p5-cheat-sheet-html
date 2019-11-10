@@ -62,7 +62,8 @@ h1, h2{
 }
 
 h2 { 
-	padding-left: 15px;
+	padding-left: calc(10vw/15);
+	white-space: nowrap;
 }
 
 #cheat-sheet{
