@@ -292,8 +292,10 @@ var ifelseSketch = function(p){
 	var canvas;
 
 	p.setup = function(){
-		canvas = p.createCanvas(225, 255);
+		canvas = p.createCanvas(150, 170);
 		canvas.parent("ifelse-canvas");
+		p.scale(0.7);
+		// p.background("pink");
 		p.translate(5, 5);
 
 		p.noFill();
@@ -327,8 +329,12 @@ var ifelseSketch = function(p){
 		// text
 		p.textFont("Fira Code");
 		p.text(terms.true, 100, 65);
+		p.push();
+		p.translate(195,60);
+		p.rotate(p.PI/2);
 		p.textAlign(p.CENTER, p.BOTTOM);
-		p.text(terms.false, 190, 20);
+		p.text(terms.false, 0, 0);
+		p.pop();
 		p.textAlign(p.CENTER, p.TOP);
 		p.text(terms.continue_program, 90, 200);
 
