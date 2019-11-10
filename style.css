@@ -61,6 +61,10 @@ h1, h2{
 	font-size: 14pt;
 }
 
+h2 { 
+	padding-left: 15px;
+}
+
 #cheat-sheet{
 
 }
@@ -68,6 +72,8 @@ h1, h2{
 #cheat-sheet pre{
 	padding: 4.5px;
 	background: #fafafa;
+	/* works better on my printer, need to test more */
+	/* background: #dddddd; */
 	white-space: pre-wrap;
 }
 
