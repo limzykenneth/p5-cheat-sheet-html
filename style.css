@@ -161,8 +161,6 @@ h2 {
 	#cheat-sheet pre{
 		margin-top: 0;
 		margin-bottom: 5px;
-		/* works better on my printer, need to test more */
-		/* background: #dddddd; */
 	}
 
 	#cheat-sheet #title{
