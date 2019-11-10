@@ -295,7 +295,6 @@ var ifelseSketch = function(p){
 		canvas = p.createCanvas(150, 170);
 		canvas.parent("ifelse-canvas");
 		p.scale(0.7);
-		// p.background("pink");
 		p.translate(5, 5);
 
 		p.noFill();
