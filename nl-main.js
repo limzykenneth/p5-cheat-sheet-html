@@ -100,21 +100,21 @@ var ellipseSketch = function(p){
 		}
 		p.pop();
 
-		var x1 = p.width/2;
-		var y1 = p.width/2;
+		var x = p.width/2;
+		var y = p.width/2;
 		p.stroke("#000000");
 		p.strokeWeight(2);
 		p.fill(p5Pink);
-		p.ellipse(x1, y1, gridSize / 10 * 6.5, gridSize / 10 * 6.5);
+		p.ellipse(x, y, gridSize / 10 * 6.5, gridSize / 10 * 6.5);
 
 		p.noStroke();
 		p.fill("#000000");
-		p.ellipse(x1, y1, gridSize/20, gridSize/20);
+		p.ellipse(x, y, gridSize/20, gridSize/20);
 
 		p.textFont("Fira Code");
 		p.noStroke();
 		p.textAlign(p.CENTER, p.BOTTOM);
-		p.text("(x1,y1)", x1, y1-10);
+		p.text("(x,y)", x, y-10);
 
 		p.push();
 		p.translate(p.width/2, p.height/2 + (gridSize / 10 * 6.5)/2 + 7);
@@ -150,20 +150,20 @@ var rectSketch = function(p){
 			p.line(0, gridSize / 10 * y, gridSize, gridSize / 10 * y);
 		}
 
-		var x1 = gridSize / 10 * 2;
-		var y1 = gridSize / 10 * 2;
+		var x = gridSize / 10 * 2;
+		var y = gridSize / 10 * 2;
 		p.stroke("#000000");
 		p.strokeWeight(2);
 		p.fill(p5Pink);
-		p.rect(x1, y1, gridSize / 10 * 5, gridSize / 10 * 5);
+		p.rect(x, y, gridSize / 10 * 5, gridSize / 10 * 5);
 
 		p.noStroke();
 		p.fill("#000000");
-		p.ellipse(x1, y1, gridSize/20, gridSize/20);
+		p.ellipse(x, y, gridSize/20, gridSize/20);
 
 		p.noStroke();
 		p.textAlign(p.CENTER, p.BOTTOM);
-		p.text("(x1,y1)", x1, y1-10);
+		p.text("(x,y)", x, y-10);
 		p.pop();
 
 		p.push();
@@ -201,13 +201,13 @@ var arcSketch = function(p){
 		p.pop();
 
 		p.push();
-		var x1 = 0;
-		var y1 = 0;
+		var x = 0;
+		var y = 0;
 		p.fill(p5Pink);
 		p.stroke("#000000");
 		p.strokeWeight(2);
 		p.translate(p.width/2, p.height/2);
-		p.arc(x1, y1, gridSize / 10 * 7.5, gridSize / 10 * 7.5, p.PI / 2, 2 * p.PI);
+		p.arc(x, y, gridSize / 10 * 7.5, gridSize / 10 * 7.5, p.PI / 2, 2 * p.PI);
 
 		p.noStroke();
 		p.fill("#000000");
@@ -218,7 +218,7 @@ var arcSketch = function(p){
 		p.translate(p.width/2, p.height/2);
 			p.textFont("Fira Code");
 			p.textAlign(p.CENTER, p.BOTTOM);
-			p.text("(x1,y1)", 0, -10);
+			p.text("(x,y)", 0, -10);
 
 			p.textAlign(p.CENTER, p.TOP);
 			p.text(terms.width, 0, gridSize / 10 * 7.5 / 2 + 5);
