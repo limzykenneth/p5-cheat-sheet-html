@@ -30,7 +30,7 @@
 header#page-header{
 	box-sizing: border-box;
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	left: 0;
 	top: 0;
 }
