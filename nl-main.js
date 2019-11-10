@@ -6,7 +6,7 @@ var terms = {
 	"start": "start",
 	"true": "waar",
 	"false": "onwaar",
-	"continue_program": "programma gaat verder",
+	"continue_program": "programma\ngaat verder",
 	"test": "conditie",
 	"statements": "programmacode"
 };
