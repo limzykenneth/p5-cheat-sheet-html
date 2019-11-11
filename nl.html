@@ -25,85 +25,85 @@
 		<div class="column">
 			<header>
 				<h1 id="title">p5.js</h1>
-				<p id="subtitle"> l’antiseche des débutants</p>
+				<p id="subtitle">Een spiekbrief voor beginners!</p>
 			</header>
 
 			<section>
-				<h1>structure du programme</h1>
+				<h1>programma structuur</h1>
 				<pre>
-<span class="code-comments">//tourne une fois, au démarrage</span>
+<span class="code-comments">//wordt eenmaal uitgevoerd bij start programma</span>
 function <strong>setup()</strong>{
   createCanvas(800,600);
 }
 
-<span class="code-comments">//tourne en boucle, aprés setup()</span>
+<span class="code-comments">//draait continu na setup()</span>
 function <strong>draw()</strong>{
-  <span class="code-comments">//instructions de dessin</span>
+  <span class="code-comments">//programmacode</span>
 }
 				</pre>
 			</section>
 
 			<section>
-				<h1>variables système</h1>
+				<h1>systeemvariabelen</h1>
 				<pre>
 <strong>windowWidth / windowHeight</strong>
-<span class="descriptors">largeur / hauteur de fenêtre</span>
+<span class="descriptors">breedte / hoogte van het venster</span>
 
 <strong>width / height</strong>
-<span class="descriptors">largueur / hauteur de la toile</span>
+<span class="descriptors">breedte / hoogte van het canvas</span>
 
 <strong>mouseX / mouseY</strong>
-<span class="descriptors">position horizontale / verticale actuelle de la souris</span>
+<span class="descriptors">huidige horizontale / verticale muispositie</span>
 				</pre>
 			</section>
 
 			<section>
-				<h1>feedback non-visuel</h1>
+				<h1>console uitvoer</h1>
 				<pre>
 <strong>print()</strong>
-<span class="descriptors">écrit dans la console</span>
+<span class="descriptors">geef informatie weer in de console</span>
 				</pre>
 			</section>
 
 			<section>
-				<h1>couleurs</h1>
+				<h1>kleur</h1>
 				<pre>
-<strong>fill(</strong>120<strong>)</strong> <span class="descriptors">gris: 0-255</span>
+<strong>fill(</strong>120<strong>)</strong> <span class="descriptors">grijs: 0-255</span>
 <strong>fill(</strong>100,125,255<strong>)</strong> <span class="descriptors">r, g, b: 0-255</span>
 <strong>fill(</strong>255, 0, 0, 50<strong>)</strong> <span class="descriptors">r, g, b, alpha</span>
-<strong>fill(</strong>'red'<strong>)</strong> <span class="descriptors">couleur par noms</span>
-<strong>fill(</strong>'#ccc'<strong>)</strong> <span class="descriptors">3-digit hex</span>
-<strong>fill(</strong>'#222222'<strong>)</strong> <span class="descriptors">6-digit hex fill</span>
-<strong>color(</strong>0, 0, 255<strong>)</strong> <span class="descriptors">object p5.Color</span>
+<strong>fill(</strong>'red'<strong>)</strong> <span class="descriptors">kleur aanduiding</span>
+<strong>fill(</strong>'#ccc'<strong>)</strong> <span class="descriptors">3-cijferige hex</span>
+<strong>fill(</strong>'#222222'<strong>)</strong> <span class="descriptors">6-cijferige hex fill</span>
+<strong>color(</strong>0, 0, 255<strong>)</strong> <span class="descriptors">p5 kleurobject</span>
 				</pre>
 			</section>
 		</div>
 
 		<div class="column">
 			<section>
-				<h1>primitives 2d</h1>
+				<h1>2d-vormen</h1>
 				<pre>
 <strong>line(</strong>x1, y1, x2, y2<strong>)</strong>
 
-<strong>ellipse(</strong>x1, y1, largeur, hauteur<strong>)</strong>
+<strong>ellipse(</strong>x1, y1, breedte, hoogte<strong>)</strong>
 
-<strong>rect(</strong>x1, y1, largeur, hauteur<strong>)</strong>
+<strong>rect(</strong>x1, y1, breedte, hoogte<strong>)</strong>
 
-<strong>arc(</strong>x1, y1, largeur, hauteur, start, stop<strong>)</strong>
+<strong>arc(</strong>x1, y1, breedte, hoogte, start, stop<strong>)</strong>
 
 <strong>beginShape();</strong>
   <strong>vertex(x1, y1);</strong>
   <strong>vertex(x2, y2);</strong>
   <strong>vertex(x3, y3);</strong>
-  <span class="code-comments">//ajoute plus de vertices</span>
+  <span class="code-comments">//add more vertex</span>
 <strong>endShape(</strong>CLOSE<strong>);</strong>
 
-<strong>text(</strong>"string", x, y, boxwidth, boxheight<strong>)</strong>
+<strong>text(</strong>"mijn tekst", x, y, breedte, hoogte<strong>)</strong>
 				</pre>
 
 				<ul>
 					<li class="canvas-container">
-						<h2>grille</h2>
+						<h2>grid-systeem</h2>
 						<div id="grid-canvas"></div>
 					</li>
 					<li class="canvas-container">
@@ -130,62 +130,62 @@ function <strong>draw()</strong>{
 			</section>
 
 			<section>
-				<h1>math</h1>
+				<h1>wiskunde</h1>
 				<pre>
 <strong>+ - / *</strong>
 
-<strong>random(</strong>limite basse,limite haute<strong>)</strong>
+<strong>random(</strong>minimum,maximum<strong>)</strong>
 
-<strong>map(</strong>valeur, in1, in2, out1, out2<strong>)</strong>
-<span class="descriptors">map une valeur entre 2 intervales in/out</span>
+<strong>map(</strong>waarde, invoer-min, invoer-max, uitvoer-min, uitvoer-max<strong>)</strong>
+<span class="descriptors">converteer een waarde van invoer naar uitvoer</span>
 				</pre>
 			</section>
 		</div>
 
 		<div class="column">
 			<section>
-				<h1>attributs</h1>
+				<h1>attributen</h1>
 				<pre>
-<strong>background(</strong>couleur<strong>)</strong>
-<span class="descriptors">définit la couleur de fond</span>
+<strong>background(</strong>kleur<strong>)</strong>
+<span class="descriptors">stel de achtergrondkleur in</span>
 
-<strong>fill(</strong>couleur<strong>)</strong>
-<span class="descriptors">définit la couleur de remplissage</span>
+<strong>fill(</strong>kleur<strong>)</strong>
+<span class="descriptors">stel de vulkleur in</span>
 
 <strong>noFill()</strong>
-<span class="descriptors">désactive le remplissage</span>
+<span class="descriptors">geen vulkleur</span>
 
-<strong>stroke(</strong>couleur<strong>)</strong>
-<span class="descriptors">définit la couleur de contour</span>
+<strong>stroke(</strong>kleur<strong>)</strong>
+<span class="descriptors">stel de lijnkleur in</span>
 
-<strong>strokeWeight(</strong>épaisseur<strong>)</strong>
-<span class="descriptors">définit l’épaisseur de contour</span>
+<strong>strokeWeight(</strong>dikte<strong>)</strong>
+<span class="descriptors">stel de lijndikte in</span>
 
 <strong>noStroke()</strong>
-<span class="descriptors">désactive le contour</span>
+<span class="descriptors">geen lijn</span>
 
 <strong>ellipseMode(</strong>MODE<strong>)</strong>
 <strong>rectMode(</strong>MODE<strong>)</strong>
-<span class="descriptors">CENTER,CORNER</span>
+<span class="descriptors">gebruik CENTER of CORNER</span>
 
 <strong>textSize(</strong>pixels<strong>)</strong>
 				</pre>
 			</section>
 
 			<section>
-				<h1>logique if/then</h1>
+				<h1>als/dan logica</h1>
 				<pre>
 
-<strong>if(</strong>condition<strong>){</strong>
-  instructions
+<strong>if(</strong>conditie<strong>){</strong>
+  programmacode
 <strong>}</strong>
 
-== égal à
-!= différent de
->  supérieur à
-<  inférieur à
->= supérieur ou égal à
-<= inférieur ou égal à
+== gelijk aan
+!= niet gelijk
+>  groter dan
+<  kleiner dan
+>= groter dan of gelijk
+<= kleiner dan of gelijk
 
 				</pre>
 				<div id="ifelse-canvas"></div>
@@ -195,8 +195,8 @@ function <strong>draw()</strong>{
 
 	<footer>
 		Compiled by Ben Moren http://benmoren.com CC BY SA NC 4.0<br/>
-		Translation By @rich-gg
+		Translation by Vincent Sijben
 	</footer>
-	<script src="./fr-main.js"></script>
+	<script src="./nl-main.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@
 header#page-header{
 	box-sizing: border-box;
 	position: absolute;
-	width: 100vw;
+	width: 100%;
 	left: 0;
 	top: 0;
 }
@@ -59,6 +59,11 @@ body{
 h1, h2{
 	color: #ed225d;
 	font-size: 14pt;
+}
+
+h2 { 
+	padding-left: calc(10vw/15);
+	white-space: nowrap;
 }
 
 #cheat-sheet{
@@ -177,8 +182,8 @@ h1, h2{
 	}
 
 	#cheat-sheet #ifelse-canvas canvas{
-		width: 170px !important;
-		height: 194px !important;
+		width: 150px !important;
+		height: 170px !important;
 	}
 
 	footer{
